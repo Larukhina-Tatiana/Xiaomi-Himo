@@ -1,0 +1,29 @@
+.description {
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+  }
+
+
+  &__list {
+    max-width: 490px;
+  }
+
+  &__img {
+    flex-basis: 570px;
+    object-fit: cover;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    & p {
+      max-width: 450px;
+    }
+  }
+
+
+}

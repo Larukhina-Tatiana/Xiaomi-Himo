@@ -1,9 +1,9 @@
 :root {
-    --black: #151515;
-    --blue: #0066ff;
-    --grey: #e8e8e8;
+    --black: #131313;
     --white: #FFFFFF;
-    --backgrount: #D9D9D9;
+    --grey: #e8e8e8;
+    --blue: #6F6F6F;
+    --accent: #FF4040;
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)){

@@ -1,0 +1,18 @@
+.nav {
+  margin-right: 70px;
+
+  &__list {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__link {
+    padding: 42px 20px;
+    text-transform: uppercase;
+    @include transition ($transition-property: (color, background-color));
+    &:hover {
+      background-color: var(--black);
+      color: var(--white);
+    }
+  }
+}

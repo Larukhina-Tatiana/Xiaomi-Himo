@@ -5,30 +5,21 @@
 @import "./components/_header";
 @import "./components/_nav";
 @import "./components/_logo";
-@import "./components/_wrapper";
-@import "./components/_hero";
-@import "./components/_swiper";
-@import "./components/swiper-pagination-bullet";
-@import "./components/_advantages";
-@import "./components/howdoes";
-@import "./components/_video";
-@import "./components/_footer";
-@import "./components/_important";
-@import "./components/_contacts";
-@import "./components/_blog";
-@import "./components/_catalog";
+@import "./components/_cover";
+@import "./components/_button";
+@import "./components/_slick-dots";
+@import "./components/_description";
+// @import "./components/_swiper";
+// @import "./components/swiper-pagination-bullet";
+// @import "./components/_advantages";
+// @import "./components/howdoes";
+// @import "./components/_video";
+// @import "./components/_footer";
+// @import "./components/_important";
+// @import "./components/_contacts";
+// @import "./components/_blog";
+// @import "./components/_catalog";
 
-.sl-wrapper .sl-counter {top: 100px;}
-.sl-wrapper .sl-close {top: 110px;}
-
-// .swiper-button-left {
-//   transform: translateX(-41px);
-
-
-// }
-// .swiper-button-right {
-//   transform: translateX(8px);
-// }
 // <svg class="projects__item-svg" width="30" height="30" aria-label="РРєРѕРЅРєР° РїРѕРёСЃРєР°">
 //                     <use href="./images/projects/icons.svg#icon-search"></use>
 //                   </svg>

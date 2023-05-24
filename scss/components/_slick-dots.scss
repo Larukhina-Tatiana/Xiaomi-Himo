@@ -1,0 +1,27 @@
+.slick-dots {
+  position: absolute;
+
+  & li + li {
+    padding-top: 10px;
+  }
+
+  & button {
+    width: 2px;
+    height: 25px;
+    font-size: 0;
+    padding: 0;
+    background-color: var(--black);
+    border-radius: 7px;
+    @include transition ($transition-property: background-color);
+
+    &:hover {
+      background-color: var(--accent);
+    }
+
+  }
+}
+
+.slick-active button {
+  background-color: var(--accent);
+
+}

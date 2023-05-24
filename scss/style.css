@@ -1,0 +1,253 @@
+@charset "UTF-8";
+:root {
+  --black: #131313;
+  --white: #FFFFFF;
+  --grey: #e8e8e8;
+  --blue: #6F6F6F;
+  --accent: #FF4040;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+picture {
+  display: block;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--black);
+}
+
+.section {
+  padding-bottom: 150px;
+}
+.section__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.2083333333;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.1875;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* Скрытие заголовка */
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("../fonts/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("../fonts/Inter-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+.container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 10px;
+  outline: 1px solid brown;
+}
+
+.header {
+  margin-bottom: 97px;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  margin-right: 70px;
+}
+.nav__list {
+  display: flex;
+  gap: 12px;
+}
+.nav__link {
+  padding: 42px 20px;
+  text-transform: uppercase;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__link:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.logo {
+  width: 160px;
+  height: 100px;
+}
+
+.cover__inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.cover__title {
+  margin: 60px 0 5px;
+  font-weight: 700;
+  font-size: 64px;
+  width: 539px;
+}
+.cover__subtitle {
+  margin-bottom: 60px;
+  font-weight: 400;
+  font-size: 32px;
+  color: var(--grey);
+}
+.cover__text {
+  max-width: 420px;
+}
+.cover__text + .cover__text {
+  margin-bottom: 80px;
+}
+.cover__subtitle + .cover__text {
+  margin-bottom: 20px;
+}
+.cover__slider {
+  max-width: 630px;
+}
+.cover__slider .slick-dots {
+  right: 0;
+  top: 50px;
+}
+.cover__list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+.cover__item {
+  min-width: 160px;
+  min-height: 58px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.cover__item-hat {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.cover__item-value {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  margin: auto 0;
+  text-transform: lowercase;
+}
+
+.button {
+  min-width: 420px;
+  padding: 28px 28px;
+  font-size: 20px;
+  letter-spacing: 1.1em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.slick-dots {
+  position: absolute;
+}
+.slick-dots li + li {
+  padding-top: 10px;
+}
+.slick-dots button {
+  width: 2px;
+  height: 25px;
+  font-size: 0;
+  padding: 0;
+  background-color: var(--black);
+  border-radius: 7px;
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slick-dots button:hover {
+  background-color: var(--accent);
+}
+
+.slick-active button {
+  background-color: var(--accent);
+}
+
+.description__inner {
+  display: flex;
+  gap: 60px;
+}
+.description__list {
+  max-width: 490px;
+}
+.description__img {
+  flex-basis: 570px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.description__item:not(:last-child) {
+  margin-bottom: 50px;
+}
+.description__item p {
+  max-width: 450px;
+}/*# sourceMappingURL=style.css.map */
