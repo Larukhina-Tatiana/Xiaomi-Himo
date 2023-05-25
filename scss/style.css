@@ -250,4 +250,42 @@ body {
 }
 .description__item p {
   max-width: 450px;
+}
+
+.feature .subtitle {
+  margin-bottom: 40px;
+}
+.feature__inner {
+  display: flex;
+  gap: 60px;
+}
+.feature__items {
+  flex-basis: 570px;
+}
+.feature__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+.feature__indicators {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: var(--white);
+  background-color: var(--black);
+  margin-bottom: 13px;
+}
+.feature__line {
+  display: flex;
+  margin-bottom: 5px;
+}
+.feature__name {
+  flex-basis: 285px;
+  padding-right: 15px;
+}
+.feature__descr {
+  max-width: 285px;
+}
+.feature__img {
+  align-self: center;
+  width: auto;
 }/*# sourceMappingURL=style.css.map */

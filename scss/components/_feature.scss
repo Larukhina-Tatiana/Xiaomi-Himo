@@ -1,0 +1,49 @@
+.feature {
+
+  & .subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__inner {
+    display: flex;
+    gap: 60px;
+    
+  }
+
+  &__items {
+    flex-basis: 570px;
+  }
+
+  &__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  &__indicators {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white);
+    background-color: var(--black);
+    margin-bottom: 13px;
+  }
+
+  &__line {
+    display: flex;
+    margin-bottom: 5px;
+  }
+
+  &__name {
+    flex-basis: 285px;
+    padding-right: 15px;
+  }
+
+  &__descr {
+    max-width: 285px;
+  }
+
+  &__img {
+    align-self: center;
+    width: auto;
+  }
+}
