@@ -1,0 +1,119 @@
+.order {
+  padding-bottom: 100px;
+
+  &__inner {
+    display: flex;
+    position: relative;
+  }
+
+  & .subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__form {
+    max-width: 420px;
+  }
+
+  &__form-text {
+    max-width: 298px;
+    margin-bottom: 30px;
+  }
+
+  &__input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0 0 10px 0;
+    border: none;
+    border-bottom: 1px solid var(--black);
+    outline: none;
+
+    &::placeholder {
+      color: var(--grey1);
+      opacity: .5;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+
+    & + & {
+      margin-left: 23px;
+    }
+
+    &-text {
+      color: var(--grey1);
+      opacity: .5;
+      margin-bottom: 10px;
+    }
+
+    &-box {
+      display: flex;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__input-radio {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    clip: rect(0 0 0 0);
+  }
+
+  &__bike {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+  }
+
+  &__radio-style {
+    width: 80px;
+    height: 12px;
+    border-radius: 30px;
+
+    &--grey {
+      background-color: var(--grey1);
+    }
+
+    &--white {
+      background-color: var(--white);
+      border: 1px solid #6F6F6F;
+    }
+
+    &--red {
+      background-color: var(--accent);
+    }
+  }
+
+  &__input-radio:checked + .order__bike {
+    display: block;
+  }
+
+  &__bike-price {
+    position: absolute;
+    font-size: 32px;
+    top: 30px;
+    left: 0;
+    right: 0;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    transform: translateX(-50%);
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 220px;
+      height: 100px;
+      border: 1px solid var(--accent);
+      border-radius: 50%;
+      top: 12px;
+
+    }
+  }
+}

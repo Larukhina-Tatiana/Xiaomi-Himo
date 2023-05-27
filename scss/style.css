@@ -3,7 +3,7 @@
   --black: #131313;
   --white: #FFFFFF;
   --grey: #e8e8e8;
-  --blue: #6F6F6F;
+  --grey1: #6F6F6F;
   --accent: #FF4040;
 }
 
@@ -288,4 +288,122 @@ body {
 .feature__img {
   align-self: center;
   width: auto;
+}
+
+.slider {
+  margin-bottom: 50px;
+}
+.slider .slick-dots {
+  left: 0;
+  top: 0;
+}
+.slider__img {
+  margin-left: 50px;
+}
+
+.order {
+  padding-bottom: 100px;
+}
+.order__inner {
+  display: flex;
+  position: relative;
+}
+.order .subtitle {
+  margin-bottom: 40px;
+}
+.order__form {
+  max-width: 420px;
+}
+.order__form-text {
+  max-width: 298px;
+  margin-bottom: 30px;
+}
+.order__input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 0 0 10px 0;
+  border: none;
+  border-bottom: 1px solid var(--black);
+  outline: none;
+}
+.order__input::-moz-placeholder {
+  color: var(--grey1);
+  opacity: 0.5;
+}
+.order__input:-ms-input-placeholder {
+  color: var(--grey1);
+  opacity: 0.5;
+}
+.order__input::placeholder {
+  color: var(--grey1);
+  opacity: 0.5;
+}
+.order__label {
+  cursor: pointer;
+}
+.order__label + .order__label {
+  margin-left: 23px;
+}
+.order__label-text {
+  color: var(--grey1);
+  opacity: 0.5;
+  margin-bottom: 10px;
+}
+.order__label-box {
+  display: flex;
+  margin-bottom: 50px;
+}
+.order__input-radio {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+  clip: rect(0 0 0 0);
+}
+.order__bike {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.order__radio-style {
+  width: 80px;
+  height: 12px;
+  border-radius: 30px;
+}
+.order__radio-style--grey {
+  background-color: var(--grey1);
+}
+.order__radio-style--white {
+  background-color: var(--white);
+  border: 1px solid #6F6F6F;
+}
+.order__radio-style--red {
+  background-color: var(--accent);
+}
+.order__input-radio:checked + .order__bike {
+  display: block;
+}
+.order__bike-price {
+  position: absolute;
+  font-size: 32px;
+  top: 30px;
+  left: 0;
+  right: 0;
+  width: 220px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  transform: translateX(-50%);
+}
+.order__bike-price::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 100px;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+  top: 12px;
 }/*# sourceMappingURL=style.css.map */

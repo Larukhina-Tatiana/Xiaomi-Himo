@@ -1,0 +1,12 @@
+.slider {
+margin-bottom: 50px;
+
+  & .slick-dots {
+    left: 0;
+    top: 0;
+  }
+
+  &__img {
+    margin-left: 50px;
+  }
+}
