@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  // scroll-behavior: smooth;
 }
 
 *,
@@ -64,7 +65,7 @@ body {
 }
 
 .section {
-  padding-bottom: 150px;
+  padding-top: 150px;
 
   &__title {
     font-weight: 700;

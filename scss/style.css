@@ -70,7 +70,7 @@ body {
 }
 
 .section {
-  padding-bottom: 150px;
+  padding-top: 150px;
 }
 .section__title {
   font-weight: 700;
@@ -105,7 +105,6 @@ body {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 10px;
-  outline: 1px solid brown;
 }
 
 .header {
@@ -207,6 +206,11 @@ body {
   text-transform: uppercase;
   color: var(--white);
   background-color: var(--black);
+  transition-duration: 550ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.button:hover {
+  background-color: var(--accent);
 }
 
 .slick-dots {
@@ -366,6 +370,7 @@ body {
   right: 0;
 }
 .order__radio-style {
+  display: inline-block;
   width: 80px;
   height: 12px;
   border-radius: 30px;
@@ -406,4 +411,36 @@ body {
   border: 1px solid var(--accent);
   border-radius: 50%;
   top: 12px;
+}
+
+.footer {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 21px 0;
+}
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.footer__police {
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: lowercase;
+  text-decoration: underline;
+}
+.footer__social {
+  display: flex;
+  gap: 28px;
+}
+.footer__contacts-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+.footer__contacts-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: lowercase;
 }/*# sourceMappingURL=style.css.map */

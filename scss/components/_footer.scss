@@ -1,0 +1,40 @@
+.footer {
+  color: var(--white);
+  background-color: var(--black);
+  padding: 21px 0;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__police {
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+    text-decoration: underline;
+  }
+
+  &__social {
+    display: flex;
+    gap: 28px;
+  }
+
+  &__contacts-item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: lowercase;
+  }
+
+
+}

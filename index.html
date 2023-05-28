@@ -29,13 +29,13 @@
             </button> -->
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__link" href="#">Описание</a>
+              <a class="nav__link" href="#description">Описание</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">Характеристики</a>
+              <a class="nav__link" href="#feature">Характеристики</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link" href="">стоимость</a>
+              <a class="nav__link" href="#order">стоимость</a>
             </li>
           </ul>
         </nav>
@@ -43,7 +43,7 @@
     </div>
   </header>
   <main class="main">
-    <section class="cover section">
+    <section class="cover">
       <div class="container">
         <div class="cover__inner">
           <div class="cover__content">
@@ -59,7 +59,7 @@
               что определенно выше, чем у большинства конкурентов. А большие колеса с пневматическими шинами, дисковые
               тормоза, 7-скоростная трансмиссия и эргономичное сидение делают каждую поездку гораздо приятнее.
             </p>
-            <a class="button" href="">ЗАКАЗАТЬ</a>
+            <a class="button" href="#order">ЗАКАЗАТЬ</a>
           </div>
           <div class="cover__feature">
             <div class="cover__slider">
@@ -83,7 +83,7 @@
         </div>
       </div>
     </section>
-    <section class="description section">
+    <section class="description section" id="description">
       <div class="container">
         <div class="description__inner">
           <img class="description__img" src="./images/description/img.jpg" alt="images">
@@ -146,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="feature section">
+    <section class="feature section" id="feature">
       <div class="container">
         <h3 class="subtitle">ХАрактеристики</h3>
 
@@ -260,7 +260,7 @@
       </div>
     </section>
 
-    <div class="slider">
+    <div class="slider section">
       <div class="container">
         <div class="slider__inner">
           <img class="slider__img" src="./images/slider/slide1.jpg" alt="himo-c26-horsky-bike-cover 1">
@@ -269,7 +269,7 @@
         </div>
       </div>
     </div>
-    <section class="order section">
+    <section class="order" id="order">
       <div class="container">
         <div class="order__inner">
           <form class="order__form">
@@ -277,46 +277,84 @@
             <p class="order__form-text">
               Если Вы хотите заказать велосипед, оставьте свой контакт и наш менеджер перезвонит вам в ближайшее время
             </p>
-            <input class="order__input" type="text" name="" id="" placeholder="имя">
-            <input class="order__input" type="tel" name="" id="" placeholder="телефон">
-            <p class="order__label-text">выберите желаемый цвет</p> 
+            <input class="order__input" type="text" placeholder="имя">
+            <input class="order__input" type="tel" placeholder="телефон">
+            <p class="order__label-text">выберите желаемый цвет</p>
             <div class="order__label-box">
               <label class="order__label">
                 <input class="order__input-radio" type="radio" name="radio">
                 <div class="order__bike">
-                  <img class="order__bike-img" src="./images/order/himo-c26-grey.jpg" alt="images himo-c26-grey" >
+                  <img class="order__bike-img" src="./images/order/himo-c26-grey.jpg" alt="images himo-c26-grey">
                   <p class="order__bike-price"><span>33 999 грн.</span></p>
                 </div>
-                <div class="order__radio-style order__radio-style--grey"></div> 
+                <span class="order__radio-style order__radio-style--grey"></span>
               </label>
               <label class="order__label">
                 <input class="order__input-radio" type="radio" name="radio" checked>
                 <div class="order__bike">
-                  <img class="order__bike-img" src="./images/order/himo-c26-white.jpg" alt="images himo-c26-white" >
+                  <img class="order__bike-img" src="./images/order/himo-c26-white.jpg" alt="images himo-c26-white">
                   <p class="order__bike-price"><span>32 999 грн.</span></p>
                 </div>
-                <div class="order__radio-style order__radio-style--white"></div> 
+                <span class="order__radio-style order__radio-style--white"></span>
               </label>
               <label class="order__label">
                 <input class="order__input-radio" type="radio" name="radio">
                 <div class="order__bike">
-                  <img class="order__bike-img" src="./images/order/himo-c26-red.jpg" alt="images himo-c26-red" >
+                  <img class="order__bike-img" src="./images/order/himo-c26-red.jpg" alt="images himo-c26-red">
                   <p class="order__bike-price"><span>34 999 грн.</span></p>
                 </div>
-                <div class="order__radio-style order__radio-style--red"></div> 
+                <span class="order__radio-style order__radio-style--red"></span>
               </label>
             </div>
-            
+
           </form>
         </div>
-<button class="button" type="submit">ЗАКАЗАТЬ</button>
+        <button class="button" type="submit">ЗАКАЗАТЬ</button>
       </div>
     </section>
-
-
   </main>
   <footer class="footer">
-    <div class="container"></div>
+    <div class="container">
+      <div class="footer__inner">
+        <a class="footer__police" href="">Политика конфиденциальности</a>
+        <ul class="footer__social">
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="">
+              <svg class="footer__svg" width="28" height="28" aria-label="Instagram link">
+                <use href="./images/icons/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="">
+              <svg class="footer__svg" width="28" height="28" aria-label="Facebook link">
+                <use href="./images/icons/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <ul class="footer__contacts">
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="tel:+380506777777">
+              <svg class="footer__svg" width="24" height="24" aria-label="Facebook link">
+                <use href="./images/icons/icons.svg#icon-phone"></use>
+              </svg>
+              +38 050 677 77 77
+            </a>
+          </li>
+          <li class="footer__contacts-item">
+            <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
+              <svg class="footer__svg" width="24" height="24" aria-label="Facebook link">
+                <use href="./images/icons/icons.svg#icon-mail"></use>
+              </svg>
+              elektrobikeukr@gmail.com
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
