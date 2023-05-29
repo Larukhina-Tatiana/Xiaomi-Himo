@@ -1,5 +1,7 @@
 .nav {
+  @media screen and (width > 990px ) {
   margin-right: 70px;
+}
 
   &__list {
     display: flex;
@@ -15,4 +17,31 @@
       color: var(--white);
     }
   }
+
+  @media screen and (width < 768px) {
+    margin: 45px 0 0;
+
+    &__list {
+      justify-content: space-between;
+    }
+
+    &__link {
+      padding: 24px 20px;
+    }
+  }
+
+  @media screen and (width < 641px) {
+
+    &__link {
+      padding: 24px 0;
+    }
+  }
+
+  @media screen and (width < 351px) {
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+  
 }
