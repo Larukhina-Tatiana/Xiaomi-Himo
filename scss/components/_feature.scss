@@ -6,6 +6,7 @@
 
   &__inner {
     display: flex;
+    justify-content: space-between;
     gap: 60px;
     
   }
@@ -19,7 +20,8 @@
   }
 
   &__indicators {
-    display: block;
+    padding: 2px 0 3px;
+    // display: block;
     font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
@@ -39,11 +41,37 @@
   }
 
   &__descr {
-    max-width: 285px;
+    flex-basis: 285px;
   }
 
   &__img {
     align-self: center;
     width: auto;
+  }
+
+ 
+
+  @media screen and (width < 992px) {
+
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__items {
+      flex-basis: 100%;
+    }
+
+    &__name {
+      flex-basis: 50%;
+    }
+  
+    &__descr {
+      flex-basis: 50%;
+    }
+
+    &__img {
+      order: -1;
+      width: 100%;
+    }
   }
 }

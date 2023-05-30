@@ -366,6 +366,7 @@ body {
 }
 .feature__inner {
   display: flex;
+  justify-content: space-between;
   gap: 60px;
 }
 .feature__items {
@@ -375,7 +376,7 @@ body {
   margin-bottom: 30px;
 }
 .feature__indicators {
-  display: block;
+  padding: 2px 0 3px;
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
@@ -392,11 +393,29 @@ body {
   padding-right: 15px;
 }
 .feature__descr {
-  max-width: 285px;
+  flex-basis: 285px;
 }
 .feature__img {
   align-self: center;
   width: auto;
+}
+@media screen and (width < 992px) {
+  .feature__inner {
+    flex-wrap: wrap;
+  }
+  .feature__items {
+    flex-basis: 100%;
+  }
+  .feature__name {
+    flex-basis: 50%;
+  }
+  .feature__descr {
+    flex-basis: 50%;
+  }
+  .feature__img {
+    order: -1;
+    width: 100%;
+  }
 }
 
 .slider {
