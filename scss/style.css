@@ -150,7 +150,7 @@ body {
   background-color: var(--black);
   color: var(--white);
 }
-@media screen and (width < 768px) {
+@media screen and (width < 769px) {
   .nav {
     margin: 45px 0 0;
   }
@@ -427,6 +427,11 @@ body {
 }
 .slider__img {
   margin-left: 50px;
+}
+@media screen and (width < 769px) {
+  .slider__img {
+    margin-left: 30px;
+  }
 }
 
 .order {
