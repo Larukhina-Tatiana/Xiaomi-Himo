@@ -567,7 +567,7 @@ body {
 }
 @media screen and (width < 971px) {
   .order__label-box {
-    margin-bottom: 550px;
+    margin-bottom: 450px;
   }
   .order__bike {
     top: 250px;
@@ -610,17 +610,35 @@ body {
 }
 @media screen and (width < 641px) {
   .order__label-box {
-    margin-bottom: 450px;
+    margin-bottom: 400px;
   }
   .order__bike-price {
     border: none;
-    border-radius: none;
+    border-radius: 0;
   }
   .order__bike-price::after {
     display: none;
   }
   .order__bike-img {
     margin-top: 85px;
+    width: 95%;
+  }
+}
+@media screen and (width < 479px) {
+  .order__label-box {
+    margin-bottom: 350px;
+  }
+}
+@media screen and (width < 361px) {
+  .order__label-box {
+    margin-bottom: 300px;
+  }
+  .order__radio-style {
+    width: 70px;
+  }
+  .order__bike-price {
+    left: 7%;
+    font-size: 18px;
   }
 }
 
