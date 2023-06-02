@@ -542,103 +542,66 @@ body {
   top: 12px;
 }
 @media screen and (width < 1111px) {
-  .order__inner {
-    display: block;
-  }
-  .order__form {
-    max-width: 95%;
-    position: relative;
-  }
-  .order__form-text {
-    max-width: 95%;
-  }
-  .order__bike {
-    top: 300px;
-  }
-  .order__bike-price {
-    transform: translateX(-100%);
-  }
-  .order__bike-img {
-    width: 450px;
+  .order {
+    margin-bottom: 50px;
   }
 }
-.order__label-box {
-  margin-bottom: 250px;
-}
-@media screen and (width < 971px) {
+@media screen and (width < 1073px) {
   .order__label-box {
-    margin-bottom: 450px;
+    margin-bottom: 300px;
   }
   .order__bike {
-    top: 250px;
+    top: auto;
+    bottom: 20px;
     left: 0;
-  }
-  .order__bike-price {
-    transform: translateX(0%);
-    top: 50px;
-    left: 600px;
+    right: auto;
   }
   .order__bike-img {
-    width: 80%;
-  }
-}
-@media screen and (width < 879px) {
-  .order__label-box {
-    margin-bottom: 400px;
-  }
-  .order__bike {
-    top: 270px;
+    width: 430px;
   }
   .order__bike-price {
-    font-size: 28px;
-    top: 20px;
-    left: 500px;
-  }
-}
-@media screen and (width < 755px) {
-  .order__label-box {
-    margin-bottom: 500px;
-  }
-  .order__bike-price {
-    font-size: 24px;
     top: 0;
-    left: 20%;
-  }
-  .order__bike-img {
-    margin-top: 110px;
+    right: -20%;
+    left: auto;
+    transform: translateX(100%);
   }
 }
-@media screen and (width < 641px) {
-  .order__label-box {
-    margin-bottom: 460px;
-  }
+@media screen and (width < 781px) {
   .order__bike-price {
-    border: none;
+    top: -50px;
+    right: 0;
+    transform: translateX(50%);
+  }
+}
+@media screen and (width < 581px) {
+  .order__bike-price {
+    display: block;
+    top: 34px;
+    right: auto;
+    left: 0;
+    transform: translateX(0%);
+    font-size: 18px;
     border-radius: 0;
+    border: none;
   }
   .order__bike-price::after {
     display: none;
   }
-  .order__bike-img {
-    margin-top: 85px;
-    width: 85%;
+  .order__bike-price span {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--accent);
+    color: var(--white);
   }
 }
-@media screen and (width < 479px) {
-  .order__label-box {
-    margin-bottom: 350px;
+@media screen and (width < 461px) {
+  .order__bike-price {
+    top: 51px;
   }
 }
 @media screen and (width < 361px) {
-  .order__label-box {
-    margin-bottom: 300px;
-  }
-  .order__radio-style {
-    width: 70px;
-  }
   .order__bike-price {
-    left: 7%;
-    font-size: 18px;
+    top: -56px;
   }
 }
 
