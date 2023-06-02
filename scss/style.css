@@ -599,9 +599,9 @@ body {
     top: 51px;
   }
 }
-@media screen and (width < 361px) {
+@media screen and (width < 381px) {
   .order__bike-price {
-    top: -56px;
+    top: -30px;
   }
 }
 
