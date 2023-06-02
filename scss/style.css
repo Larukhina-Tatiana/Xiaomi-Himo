@@ -543,7 +543,7 @@ body {
 }
 @media screen and (width < 1111px) {
   .order {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 @media screen and (width < 1073px) {
@@ -635,4 +635,19 @@ body {
   font-size: 12px;
   line-height: 15px;
   text-transform: lowercase;
+}
+@media screen and (width < 581px) {
+  .footer {
+    padding: 15px;
+  }
+  .footer__inner {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }/*# sourceMappingURL=style.css.map */

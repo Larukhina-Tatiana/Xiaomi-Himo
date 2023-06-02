@@ -36,5 +36,22 @@
     text-transform: lowercase;
   }
 
+  @media screen and (width < 581px) {
+    padding: 15px;
+
+    &__inner {
+      flex-direction: column;
+      // justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
 
 }
