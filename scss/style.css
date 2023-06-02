@@ -610,7 +610,7 @@ body {
 }
 @media screen and (width < 641px) {
   .order__label-box {
-    margin-bottom: 400px;
+    margin-bottom: 460px;
   }
   .order__bike-price {
     border: none;
@@ -621,7 +621,7 @@ body {
   }
   .order__bike-img {
     margin-top: 85px;
-    width: 95%;
+    width: 85%;
   }
 }
 @media screen and (width < 479px) {
